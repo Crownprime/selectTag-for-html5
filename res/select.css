@@ -1,0 +1,71 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #69d2e7;
+}
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: "Monaco","Consolas","Helvetica","Tahoma","Arial","PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei Light","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+input,button,select,textarea {
+    outline: none;
+    -webkit-appearance: none;
+}
+.Tran {
+	transition: all .2s;
+	-moz-transition: all .2s;	/* Firefox 4 */
+	-webkit-transition: all .2s;	/* Safari 和 Chrome */
+	-o-transition: all .2s;	/* Opera */
+}
+.Tran-sl {
+    transition: all .5s;
+	-moz-transition: all .5s;	/* Firefox 4 */
+	-webkit-transition: all .5s;	/* Safari 和 Chrome */
+	-o-transition: all .5s;	/* Opera */
+}
+
+.Select{
+	position: relative;
+	border: 1px solid black;
+}
+.Select>p{
+	margin: 0;
+	padding: 0;
+}
+.Select>i{
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.Select>ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
+	animation-fill-mode: forwards;
+}
+.Select>ul>li{
+	padding: 0 10px 0 10px;
+}
+.Select>ul>li:hover{
+	background-color: black;
+}
