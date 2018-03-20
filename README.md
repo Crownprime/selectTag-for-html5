@@ -1,32 +1,42 @@
-## selectTag-for-html5
-<br>
-`1.0`<br>
-ÕâÊÇÒ»¸öÇáÁ¿¼¶µÄÀûÓÃjsÄ£ÄâHTMLÖĞselect±êÇ©µÄ²å¼ş¡£<br>
-»¹ÔÚÎªµ÷½Úselect±êÇ©µÄÃÀ¹ÛĞÔºÍ¼æÈİĞÔ·¢³îÂğ£¿²»·ÁÊÔÊÔÕâ¸ö¼òÒ×µÄĞ¡²å¼ş¡£<br>
-Ê×ÏÈËüµÄÈİÁ¿·Ç³£Ğ¡£¬Ã»ÓĞÆäËû²å¼şÈßÓà¹¦ÄÜ¡£Æä´Î£¬Äã¿ÉÒÔÀûÓÃcss3µÄÓï·¨×Ô¶¨ÒåÑùÊ½¡£<br>
-`method`<br>
+# selectTag-for-html5
+
+_a simple plug-ins_
+
+#`1.0`
+
+è¿™æ˜¯ä¸€ä¸ªè½»é‡çº§çš„åˆ©ç”¨jsæ¨¡æ‹ŸHTMLä¸­selectæ ‡ç­¾çš„æ’ä»¶ã€‚
+è¿˜åœ¨ä¸ºè°ƒèŠ‚selectæ ‡ç­¾çš„ç¾è§‚æ€§å’Œå…¼å®¹æ€§å‘æ„å—ï¼Ÿä¸å¦¨è¯•è¯•è¿™ä¸ªç®€æ˜“çš„å°æ’ä»¶ã€‚
+é¦–å…ˆå®ƒçš„å®¹é‡éå¸¸å°ï¼Œæ²¡æœ‰å…¶ä»–æ’ä»¶å†—ä½™åŠŸèƒ½ã€‚å…¶æ¬¡ï¼Œä½ å¯ä»¥åˆ©ç”¨css3çš„è¯­æ³•è‡ªå®šä¹‰æ ·å¼ã€‚
+
+##method
+1. include the stylesheet on `<head>`.
+_* the stylesheet use globe `border-box`_
+
 ```html
-//(1.
+<head>
 <link href="path/res/select.css" rel="stylesheet">
-//ÇëÒıÈëcssÎÄ¼şÈ·±£»ù´¡ÑùÊ½
-//*×¢ÒâÄÚ²¿²ÉÓÃÈ«¾Öborder-boxÑùÊ½
+</head>
+```
 
-//(2.
-//<div class="Select"></div>
-//ÔÚĞèÒªµÄÎ»ÖÃÌí¼ÓÒ»¸ö¿éÔªËØ
+2.add a tag on someplace where you need and hava a 'Select' class value.
 
-//(3.
+```html
+<div class="Select"></div>
+```
+
+3.include the js files with jQuery in the front.
+
+```html
 <script src="path/jquery.js"></script>
-//Îñ±ØÈ·±£ÒıÈëjQuery
 <script src="path/res/select.js"></script>
-//ÒıÈëjsÎÄ¼ş
-<script>
+```
+
+4.DIY your stylesheet.
+
+```javascript
 $('.Select').HtmlSelect({
 	'width':'300px',
 	'color':'rgb(1,1,1)',
 	'li':[['default_text','default_value'],['option1_text','option1_value'],['option2_text','option2_value']]
 })
-</script>
-//×Ô¶¨ÒåÄãµÄÑùÊ½
-//ÄãÒ²¿ÉÒÔÔÚcssÎÄ¼şÖĞ¿ØÖÆÑùÊ½
 ```
